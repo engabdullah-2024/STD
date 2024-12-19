@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Information</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Student Information</h1>
+
+  <!-- Add Student Form -->
+  <div class="form-container">
+    <h2>Add/Update Student</h2>
+    <form id="student-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required>
+      
+      <label for="parent">Parent:</label>
+      <input type="text" id="parent" required>
+      
+      <label for="tell">Tell:</label>
+      <input type="text" id="tell" required>
+      
+      <label for="grade">Grade:</label>
+      <input type="text" id="grade" required>
+      <label for="situation">Situation:</label>
+      <input type="text" id="situation" required>
+      
+      <button type="submit">Add Student</button>
+    </form>
+  </div>
+
+  <!-- Table to Display Students -->
+  <table id="student-table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Parent</th>
+        <th>Tell</th>
+        <th>Grade</th>
+        <th>Situation</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Student data will be inserted here dynamically -->
+    </tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
